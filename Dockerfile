@@ -1,5 +1,3 @@
-FROM ubuntu:18.04
-RUN apt-get update && \
-    apt-get install -y python
-COPY hello.py .
-ENTRYPOINT ["python", "hello.py"]
+FROM php:8.0-apache
+COPY index.php /var/www/html
+EXPOSE 80

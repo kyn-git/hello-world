@@ -1,7 +1,7 @@
 pipeline { 
    environment { 
        registry = "keelo/hello-world" 
-       registryCredential = 'dockerhub_id' 
+       registryCredential = 'dockerhub' 
        dockerImage = '' 
    }
    agent any 
